@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MeWeather</string>
+
+    <string name="default_text">--</string>
+
+    <string name="now">今天</string>
+    <string name="pm2_5">PM2.5</string>
+    <string name="forecast">预报</string>
+
+    <string name="detail">详细信息</string>
+    <string name="felt_air_temp">体感温度</string>
+    <string name="humidity">湿度</string>
+    <string name="wind">风向风力</string>
+    <string name="uv_index">紫外线指数</string>
+    <string name="dressing_index">穿衣指数</string>
+
+
+</resources>
