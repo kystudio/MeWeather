@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical">
 
     <android.support.v4.widget.SwipeRefreshLayout
@@ -50,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="8dp"
                     android:text="@string/default_text"
                     android:textColor="@color/text_color"
                     android:textSize="12sp" />
@@ -64,7 +65,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp">
+                    android:layout_marginTop="8dp">
 
                     <ImageView
                         android:id="@+id/iv_now_weather"
@@ -82,20 +83,20 @@
                         android:textColor="@color/text_color" />
                 </LinearLayout>
                 <!-- 下面这个是今日气温  -->
-                <TextView
-                    android:id="@+id/tv_today_temp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/default_text"
-                    android:textColor="@color/text_color"
-                    android:textSize="12sp" />
+                <!--<TextView-->
+                <!--android:id="@+id/tv_today_temp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:text="@string/default_text"-->
+                <!--android:textColor="@color/text_color"-->
+                <!--android:textSize="12sp" />-->
                 <!-- 下面这个是实时天气与PM 2.5区域  -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginTop="16dp">
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp">
                     <!-- 下面这个是当前温度  -->
                     <TextView
                         android:id="@+id/tv_now_temp"
@@ -162,8 +163,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1px"
-                        android:layout_marginBottom="4dp"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:background="@color/light_grey" />
 
                     <LinearLayout
@@ -199,7 +199,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
 
                         <ImageView
                             android:id="@+id/iv_next_three"
@@ -229,7 +230,9 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
 
                         <TextView
                             android:id="@+id/tv_next_three_temp"
@@ -266,6 +269,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:gravity="center">
 
                         <TextView
@@ -302,6 +306,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:gravity="center">
 
                         <TextView
@@ -339,6 +345,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:gravity="center">
 
                         <TextView
@@ -376,6 +384,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:gravity="center">
 
                         <TextView
@@ -409,14 +418,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/wireframe_dark"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/detail" />
+                        android:text="@string/detail"
+                        android:textColor="@color/dark_grey" />
 
                     <View
                         android:layout_width="match_parent"
@@ -424,29 +435,29 @@
                         android:layout_marginTop="8dp"
                         android:background="@color/light_grey" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginTop="8dp">
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginTop="8dp">-->
 
-                        <TextView
-                            style="@style/TextViewStyle"
-                            android:gravity="left"
-                            android:paddingLeft="16dp"
-                            android:text="@string/felt_air_temp" />
+                    <!--<TextView-->
+                    <!--style="@style/TextViewStyle"-->
+                    <!--android:gravity="left"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:text="@string/felt_air_temp" />-->
 
-                        <TextView
-                            android:id="@+id/tv_felt_air_temp"
-                            style="@style/TextViewStyle"
-                            android:gravity="left"
-                            android:paddingLeft="16dp" />
-                    </LinearLayout>
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_felt_air_temp"-->
+                    <!--style="@style/TextViewStyle"-->
+                    <!--android:gravity="left"-->
+                    <!--android:paddingLeft="16dp" />-->
+                    <!--</LinearLayout>-->
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1px"
-                        android:background="@color/light_grey" />
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="@color/light_grey" />-->
 
                     <LinearLayout
                         android:layout_width="match_parent"
